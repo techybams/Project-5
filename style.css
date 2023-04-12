@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    
+
+
+}
+h2{
+    color: lightseagreen;
+}
+.header{
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: white;
+
+}
+.checkbtn{
+    font-size: 50px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.logo{
+    font-weight: bold;
+    margin-left: 100px;
+}
+.navigation ul{
+    display: flex;
+    margin-right: 100px;
+
+}
+.navigation li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.introcontent{
+    margin-left: 100px;
+    width: 30%;
+    margin-top: -120px;
+}
+.image1{
+    transform: scale(0.85);
+    margin-top: 100px;
+}
+.info{
+    background-color: lightgrey;
+    padding: 30px;
+}
+.info-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.info1{
+    margin-left: 100px;
+    width: 20%;
+}
+.info2{
+    margin-right: 100px;
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.info3, .info4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px; 
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 85%; 
+ 
+}
+.one{
+    border-radius: 20px;
+}
+.ending{
+    background-color: lightseagreen;
+}
+.two{
+    display: absolute;
+    margin-left: 1170px;
+    
+}
+.two-1{
+    border-radius: 20px 20px 0px 1px;
+}
+.ending-content{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ending-con{
+    margin-left: 100px;
+    width: 25%;
+    font-weight: 700;
+    color: white;
+}
+.end{
+    margin-right: 100px;
+}
+.endcon1{
+    padding: 10px;
+    background-color: white;
+    color: lightseagreen;
+    border-radius: 10px;
+    
+}
+.endcon2{
+    padding: 10px;
+    background-color: darkslategray;
+    color: white;
+    border-radius: 10px;
+}
+.image2{
+    margin-left: 120px;
+}
+.foot{
+    text-align: center;
+    background-color: darkslategray;
+    font-size: 20px;
+    color: white;
+}
+.foot1{
+    padding: 50px;
+}
+.image2a,
+.image2b,
+.image2c,
+.image2d{
+    width: 1.5%;
+    height: 1.5%;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.foot2{
+    padding: 30px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:600px) {
+    .header{
+    
+        width: 100%;
+        padding: 20px;
+           
+    }
+    
+    .logo{
+        margin-left: 20px;
+    }
+    .navigation{
+        width: 30%;
+        overflow: hidden;
+        display: none;
+    
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+   
+    .navaigation ul li{
+        margin-left: 5px;
+        display: block;
+       
+    }
+    .intro{
+        width: 100%;
+        display: block;
+    }
+    .introcontent{
+        width: 100%;
+        margin-left: 20px;
+
+    }
+    .introcontent h2{
+        margin-top: 150px;
+        font-size: 50px;
+    }
+    .introcontent p{
+        width: 70%;
+    }
+    .image1{
+        transform: scale(0.6);
+        margin: 0 auto;
+        margin-left: -45px;
+        width: 100%;
+    }
+    .info{
+        padding: 20px;
+    }
+    .info-content{
+        display: block;
+    }
+    .info1{
+        width: 80%;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .info2{
+        margin-top: 20px;
+        padding: 10px;
+        width: 30%;
+        margin-left: 20px;
+    }
+    .info3, .info4{
+        display: block;
+        width: 80%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        column-gap: 20px;
+        padding-top: 10px;
+    }
+   .two{
+        margin-left: 200px;
+   }
+
+    .ending-content{
+        display: block;
+    }
+    .ending-con{
+       margin-left: 20px; 
+       width: 80%;
+       font-size: 20px;
+    }
+    .end{
+        margin-top: 30px;
+    }
+    .image2a,
+    .image2b,
+    .image2c,
+    .image2d{
+    width: 4%;
+    height: 4%;
+    }
+}
